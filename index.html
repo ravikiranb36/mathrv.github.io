@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>MathRV</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <script src="https://cdn.plot.ly/plotly-2.24.1.min.js" charset="utf-8"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+
+</head>
+
+<body>
+<nav class="navbar navbar-expand-md bg-primary">
+  <div class="container-fluid">
+    <a class="navbar-brand fs-2 fw-bold text-light" href="#">MathRV</a>
+    <a class="nav-item text-light fw-bold" href="help.html" target="_blank">Help</a>
+    <!--    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"-->
+    <!--            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">-->
+    <!--      <span class="navbar-toggler-icon"></span>-->
+    <!--    </button>-->
+  </div>
+</nav>
+
+<div class="container" style="min-height: 60vh;">
+  <h2 class="form-title mb-3 fw-bold " style="color: #5F9F16;">Visualize your mathematical Equations</h2>
+  <div class="input-group input-group-md mt-2 ">
+    <label class=" fw-bold col-sm-1" style="color: #19865F;" for="constants">Constants</label>
+    <textarea id="constants" class="form-control" rows="3" placeholder="Enter constants like&#10 a=10 &#10 b=5"
+              required></textarea>
+  </div>
+  <div class="input-group input-group-md mt-2">
+    <label class=" fw-bold col-sm-1" style="color: #19865F;" for="variable">X-Values</label>
+    <input id="variable" type="text" class="form-control m" aria-describedby="inputGroup-sizing-lg">
+  </div>
+  <div class="input-group input-group-md mt-2">
+    <label class="fw-bold col-sm-1" style="color: #19865F;" for="equation">Equation</label>
+    <input id="equation" type="text" class="form-control" aria-describedby="inputGroup-sizing-lg">
+  </div>
+  <p id="plot-error" class="text-danger visually-hidden"></p>
+  <button id="visualuze-btn" type="button" class="btn btn-primary w-100 mt-2 fw-bold">Visualize</button>
+  <p class="fw-bold mt-1"> If you need help<a href="help.html" target="_blank"> Click here</a></p>
+</div>
+<div id="eqplot">
+
+</div>
+<div>
+  <h4>Examples:</h4>
+  <div id="examples">
+
+  </div>
+  <button id="display_examples" class="btn btn-primary btn-lg" type="button">More</button>
+</div>
+
+<footer class="footer bg-dark text-light bottom m-auto">
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-md-6">
+        <h4>Ravikirana B</h4>
+        <p>Pythonist</p>
+      </div>
+      <div class="col-md-6">
+        <h4>Contact</h4>
+        <p>Email: ravikiranb36@gmail.com</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+
+</html>
