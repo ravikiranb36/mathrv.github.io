@@ -1,8 +1,5 @@
 const example_equations = [
   "abs(x)",
-  "acos(x)",
-  "asin(x)",
-  "atan(x)",
   "atan2(x, 3)",
   "ceil(x)",
   "cos(x)",
