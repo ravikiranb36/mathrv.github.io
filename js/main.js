@@ -199,7 +199,6 @@ function plot_example_equation(equation, div_id) {
 }
 
 function add_examples(count = "less") {
-  console.log("Adding examples");
   let equations = [];
   if (count === "less") {
     equations = example_equations.slice(0, 10);
